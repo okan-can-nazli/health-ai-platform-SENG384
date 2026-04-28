@@ -45,7 +45,7 @@ function MyPostsPage() {
                 <p><strong>Domain:</strong> {post.workingDomain}</p>
                 <p><strong>Expertise:</strong> {post.expertiseRequired}</p>
                 <div className="button-row">
-                  <Link to={`/posts/${post.id}`}>View</Link>
+                  <button><Link to={`/posts/${post.id}`}>View</Link></button>
                   <button onClick={() => handleStatusChange(post.id, "active")}>
                     Mark Active
                   </button>

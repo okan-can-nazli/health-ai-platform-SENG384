@@ -14,10 +14,11 @@ body {
   align-items: flex-start;
   justify-content: center;
   padding: 2rem;
+  background: #563f46;
 }
 
 .card {
-  background: white;
+  background: #c8c3cc;
   width: 100%;
   max-width: 500px;
   padding: 2rem;
@@ -26,7 +27,7 @@ body {
 }
 
 .wide-card {
-  max-width: 900px;
+  max-width: 890px;
 }
 
 .form {
@@ -41,10 +42,19 @@ body {
   gap: 0.8rem;
 }
 
+.wide-card h1{
+  color: #555555;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 8px;
+}
+
 input,
 select,
 textarea,
 button {
+  border: #f4f7fb;
+  border-radius: 30px;
   padding: 0.9rem 1rem;
   font-size: 1rem;
 }
@@ -56,6 +66,22 @@ textarea {
 
 button {
   cursor: pointer;
+  transition: 0.3s ease;
+  padding: 15px 20px;
+}
+
+button:hover {
+  background-color: gray;
+  color: white;
+}
+
+button a{
+  transition: 0.3s ease;
+}
+
+button:hover a {
+  color: white;
+  padding: 20px 20px;
 }
 
 .token-box {
@@ -84,7 +110,13 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.button-row a{
+  text-decoration: none;
+  color: black;
 }
 
 .checkbox-row {

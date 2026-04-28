@@ -23,24 +23,25 @@ function DashboardPage() {
         <div className="button-row">
           {!isAdmin && (
             <>
-              <Link to="/posts/new">Create Post</Link>
-              <Link to="/posts">All Posts</Link>
-              <Link to="/my-posts">My Posts</Link>
-              <Link to="/meetings">Meeting Requests</Link>
+              <button><Link to="/posts/new">Create Post</Link></button>
+              <button><Link to="/posts">All Posts</Link></button>
+              <button><Link to="/my-posts">My Posts</Link></button>
+              <button><Link to="/meetings">Meeting Requests</Link></button>
             </>
           )}
 
-          <Link to="/notifications">Notifications</Link>
+          <button><Link to="/notifications">Notifications</Link></button>
 
           {isAdmin && (
             <>
-              <Link to="/admin/users">Admin Users</Link>
-              <Link to="/admin/posts">Admin Posts</Link>
-              <Link to="/admin/logs">Admin Logs</Link>
+              <button><Link to="/admin/users">Admin Users</Link></button>
+              <button><Link to="/admin/posts">Admin Posts</Link></button>
+              <button><Link to="/admin/logs">Admin Logs</Link></button>
             </>
           )}
 
           <button onClick={logout}>Logout</button>
+          
         </div>
       </div>
     </div>
